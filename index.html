@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Crypto Wall</title>
+</head>
+<body>
+  <div class="modal">
+    <div class="modal-content">
+      <span class="content-here"></span>
+      <button class="close-button">x</button>
+    </div>
+  </div>
+  <div class="main" onclick="doStuff()">
+    <h>Crypto Wall: Click One for More Information!</h>
+  <div class="top-row">
+    <div class="bitcoin" id="coins"><img src="images/btc.png"></div>
+    <div class="ethereum" id="coins" ><img src="images/eth.png"></div>
+    <div class="binancecoin" id="coins"><img src="images/bnb.png"></div>
+    <div class="ripple" id="coins"><img src="images/xrp.png"></div>
+  </div>
+  <div class="popup">
+
+  </div>
+  <div class="mid-row">
+    <div class="solana" id="coins"><img src="images/sol.png"></div>
+    <div class="quant-network" id="coins"><img src="images/qnt.png"></div>
+    <div class="polkadot" id="coins"><img src="images/dot.png"></div>
+    <div class="avalanche-2" id="coins"><img src="images/avax.png"></div>
+  </div>
+  <div class="bottom-row">
+    <div class="uniswap" id="coins"><img src="images/UNI.png"></div>
+    <div class="litecoin" id="coins"><img src="images/LTC.png"></div>
+    <div class="cosmos" id="coins"><img src="images/ATOM.png"></div>
+    <div class="filecoin" id="coins"><img src="images/FIL.png"><div>
+  </div>
+  </div>
+  <script>
+    let modal = document.querySelector(".modal");
+    let modalContent = document.querySelector(".content-here")
+    let closeButton = document.querySelector(".close-button");
+    closeButton.addEventListener("click", CloseModal);
+    console.log(modal)
+  </script>
+</body>
+</html>
